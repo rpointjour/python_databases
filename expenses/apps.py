@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class LivingexpensesConfig(AppConfig):
+class ExpensesConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'livingExpenses'
+    name = 'expenses'
