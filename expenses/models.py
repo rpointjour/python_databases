@@ -1,3 +1,31 @@
 from django.db import models
 
-# Create your models here.
+class IdealBudget(models.Model):
+    rent = models.DecimalField(max_digits=6, decimal_places=2)
+    loans = models.DecimalField(max_digits=6, decimal_places=2)
+    groceries = models.DecimalField(max_digits=6, decimal_places=2)
+    leisure = models.DecimalField(max_digits=6, decimal_places=2)
+    hygiene = models.DecimalField(max_digits=6, decimal_places=2)
+    haircut = models.DecimalField(max_digits=6, decimal_places=2)
+    carPayment = models.DecimalField(max_digits=6, decimal_places=2)
+    carInsurance = models.DecimalField(max_digits=6, decimal_places=2)
+    gas = models.DecimalField(max_digits=6, decimal_places=2)
+    phone = models.DecimalField(max_digits=6, decimal_places=2)
+    internet = models.DecimalField(max_digits=6, decimal_places=2)
+    utilities = models.DecimalField(max_digits=6, decimal_places=2)
+    savings = models.DecimalField(max_digits=6, decimal_places=2)
+
+class ActualBudget(models.Model):
+    rent = models.DecimalField(max_digits=6, decimal_places=2)
+    loans = models.DecimalField(max_digits=6, decimal_places=2)
+    groceries = models.DecimalField(max_digits=6, decimal_places=2)
+    leisure = models.DecimalField(max_digits=6, decimal_places=2)
+    hygiene = models.DecimalField(max_digits=6, decimal_places=2)
+    haircut = models.DecimalField(max_digits=6, decimal_places=2)
+    carPayment = models.DecimalField(max_digits=6, decimal_places=2)
+    carInsurance = models.DecimalField(max_digits=6, decimal_places=2)
+    gas = models.DecimalField(max_digits=6, decimal_places=2)
+    phone = models.DecimalField(max_digits=6, decimal_places=2)
+    internet = models.DecimalField(max_digits=6, decimal_places=2)
+    utilities = models.DecimalField(max_digits=6, decimal_places=2)
+    savings = models.DecimalField(max_digits=6, decimal_places=2)
